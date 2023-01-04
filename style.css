@@ -1,4 +1,4 @@
-nav {
+/* nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,7 +67,7 @@ nav div span {
 
   background-size: 300%;
   animation: border 12s linear infinite;
-}
+} */
 
 .box::after {
   filter: blur(10px);

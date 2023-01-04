@@ -1,3 +1,10 @@
+.hamburger-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
 .hamburger {
   display: block;
   position: relative;
@@ -45,10 +52,6 @@
 nav {
   margin-top: 4%;
   display: flex;
-  justify-items: flex-end;
-  width: 100%;
-  background-color: blue;
-  justify-content: flex-end;
 }
 
 .nav-link-container {
@@ -57,10 +60,92 @@ nav {
 
 @media (min-width: 675px) {
   .nav-link-container {
+    padding: 0 8%;
+    font-size: 1.2em;
     display: flex;
+    width: 100%;
+    align-items: center;
   }
 
-  .hamburger {
+  .nav-link-container a {
+    text-decoration: none;
+  }
+
+  nav div {
+    margin: 5px 15px 5px 5px;
+    color: #ccd6f6;
+  }
+
+  nav div:hover {
+    cursor: pointer;
+  }
+
+  nav div span {
+    margin-right: 5px;
+    color: #64ffda;
+  }
+
+  .resume {
+    border: 1px solid red;
+    padding: 10px;
+  }
+
+  .box {
+    position: relative;
+    background-color: #0a1930;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 3px;
+  }
+
+  .box::after {
+    border-radius: 8px;
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    top: -15px;
+    left: -15px;
+    background: linear-gradient(
+      45deg,
+      #ffff00,
+      #00ff00,
+      #0099ff,
+      #001aff,
+      #a200ff,
+      #ff0055,
+      #ff0000,
+      #ff0055,
+      #ff0000,
+      #ffff00,
+      #00ff00,
+      #0099ff,
+      #001aff,
+      #a200ff
+    );
+
+    background-size: 300%;
+    animation: border 12s linear infinite;
+  }
+
+  .box::after {
+    filter: blur(10px);
+  }
+
+  @keyframes border {
+    0%,
+    100% {
+      background-position: 0, 0;
+    }
+
+    50% {
+      background-position: 300%;
+    }
+  }
+
+  .hamburger-container {
     display: none;
   }
 }
