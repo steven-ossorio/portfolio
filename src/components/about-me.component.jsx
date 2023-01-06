@@ -12,7 +12,6 @@ import {
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import Social from "./social.component";
 import { StaticImage } from "gatsby-plugin-image";
-import Header from "./header.component";
 
 const AboutMe = () => {
   const [shouldShow, setShouldShow] = useState(false);
@@ -23,7 +22,6 @@ const AboutMe = () => {
 
   return (
     <Paper className="section">
-      <Header />
       <StaticImage
         className="about-me-image"
         src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
