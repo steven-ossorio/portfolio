@@ -38,7 +38,7 @@ const AboutMe = () => {
           <Zoom in={shouldShow}>
             <Grid2 item sm={8}>
               <Typography component="div" variant="h3">
-                Hi, my name is Steven. I am a Software Engineer
+                Hi, my name is Mike. I am a Software Engineer
               </Typography>
               <Typography component="div" variant="h5">
                 I build websites, web application and responsive websites
