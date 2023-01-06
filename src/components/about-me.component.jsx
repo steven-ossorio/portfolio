@@ -23,7 +23,6 @@ const AboutMe = () => {
 
   return (
     <Paper className="section">
-      <Header />
       <StaticImage
         className="about-me-image"
         src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
@@ -38,10 +37,10 @@ const AboutMe = () => {
         >
           <Zoom in={shouldShow}>
             <Grid2 item sm={8}>
-              <Typography component="h1" variant="h3">
+              <Typography component="div" variant="h3">
                 Hi, my name is Steven. I am a Software Engineer
               </Typography>
-              <Typography variant="h5">
+              <Typography component="div" variant="h5">
                 I build websites, web application and responsive websites
               </Typography>
               <Box my={5}>
