@@ -9,7 +9,7 @@ import {
   Zoom,
   Grid,
 } from "@mui/material";
-import Social from "./Social.component";
+import Social from "./social.component";
 
 const AboutMe = () => {
   const [shouldShow, setShouldShow] = useState(false);
