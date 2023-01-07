@@ -19,7 +19,7 @@ import "../styles/Home.module.css";
 const navigationLinks = [
   {
     name: "About",
-    href: "",
+    href: "#about",
   },
   {
     name: "Work",
@@ -27,11 +27,11 @@ const navigationLinks = [
   },
   {
     name: "Projects",
-    href: "",
+    href: "#projects",
   },
   {
     name: "Resume",
-    href: "",
+    href: "/steven_resume_2022.pdf",
   },
 ];
 

@@ -19,7 +19,7 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <Paper className="section">
+    <Paper className="section" id="about">
       <div className="overlay"></div>
       <Container className="container" maxWidth="md">
         <Grid

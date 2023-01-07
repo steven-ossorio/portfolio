@@ -1,17 +1,24 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import {
+  createTheme,
+  ThemeProvider,
+  responsiveFontSizes,
+} from "@mui/material/styles";
 import Header from "../component/header.component";
 import AboutMe from "../component/about.component";
+import Projects from "../component/projects.component";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const darkTheme = createTheme({
+let darkTheme = createTheme({
   palette: {
     mode: "dark",
   },
 });
+
+darkTheme = responsiveFontSizes(darkTheme);
 
 export default function Home() {
   return (
@@ -25,6 +32,7 @@ export default function Home() {
       <ThemeProvider theme={darkTheme}>
         <Header />
         <AboutMe />
+        <Projects />
       </ThemeProvider>
     </>
   );

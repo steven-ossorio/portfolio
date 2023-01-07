@@ -108,6 +108,7 @@ a {
 
 .section {
   height: 90vh;
+  position: relative;
 }
 
 .container {
@@ -210,4 +211,13 @@ a {
   50% {
     background-position: 300%;
   }
+}
+
+.links {
+  margin-right: auto;
+}
+
+.tag {
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
