@@ -14,7 +14,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import React, { useState } from "react";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import "./about-me.css";
+import "../styles/Home.module.css";
 
 const navigationLinks = [
   {
@@ -46,6 +46,7 @@ const Header = () => {
             <Hidden smDown>
               {navigationLinks.map((item) => (
                 <Link
+                  key={item.name}
                   className={item.name === "Resume" ? "resume box" : "link"}
                   color="textPrimary"
                   variant="button"
@@ -68,14 +69,14 @@ const Header = () => {
           onClose={() => setOpen(false)}
         >
           <div>
-            <IconButton>
-              <ChevronRightIcon onClick={() => setOpen(false)} />
+            <IconButton onClick={() => setOpen(false)}>
+              <ChevronRightIcon />
             </IconButton>
           </div>
           <Divider />
           <List>
             {navigationLinks.map((item) => (
-              <ListItem>
+              <ListItem key={item.name}>
                 <Link
                   className={item.name === "Resume" ? "resume box" : "link"}
                   color="textPrimary"
