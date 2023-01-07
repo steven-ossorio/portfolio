@@ -1,10 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "@next/font/google";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import Header from "../component/Header.component";
-import AboutMe from "../component/About.component";
+import Header from "../component/header.component";
+import AboutMe from "../component/about.component";
 
 const inter = Inter({ subsets: ["latin"] });
 
