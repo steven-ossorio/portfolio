@@ -111,9 +111,9 @@ const Project = ({ title, description, tags, links }) => {
 
 const Projects = () => {
   return (
-    <Container maxWidth="md" id="projects" mt={10}>
-      <Box pt={2} mb={2}>
-        <Typography variant="h4" mt={10}>
+    <Container maxWidth="md" id="projects">
+      <Box mb={2}>
+        <Typography variant="h4" mt={5}>
           Projects
         </Typography>
         <Divider
@@ -123,7 +123,6 @@ const Projects = () => {
             borderBottomWidth: "3px",
             backgroundColor: "red",
             marginBottom: "20px",
-            marginTop: "10px",
           }}
         />
       </Box>

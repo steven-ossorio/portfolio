@@ -1,5 +1,7 @@
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Divider from "@mui/material/Divider";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3Full, DiReact } from "react-icons/di";
 import {
@@ -57,13 +59,24 @@ const skills = [
 
 const Skills = () => {
   return (
-    <Box>
+    <Container maxWidth="md" sx={{ marginTop: "50px" }}>
+      <Typography component="div" variant="h4">
+        Skills
+      </Typography>
+      <Divider
+        sx={{
+          color: "red",
+          width: "50%",
+          borderBottomWidth: "3px",
+          backgroundColor: "red",
+          marginBottom: "20px",
+        }}
+      />
       <Box
         sx={{
           display: "flex",
-          width: "100%",
           flexWrap: "wrap",
-          alignItems: "center",
+          justifyContent: "flex-start",
         }}
         mt={5}
       >
@@ -79,13 +92,22 @@ const Skills = () => {
                 alignItems: "center",
               }}
             >
-              <Icon size={50} />
+              <Box
+                sx={{
+                  "&:hover": {
+                    color: "#FF3831",
+                    cursor: "pointer",
+                  },
+                }}
+              >
+                <Icon size={50} />
+              </Box>
               <Typography>{name}</Typography>
             </Box>
           );
         })}
       </Box>
-    </Box>
+    </Container>
   );
 };
 

@@ -12,7 +12,6 @@ import {
   Divider,
 } from "@mui/material";
 import Social from "./social.component";
-import Skills from "./skills.component";
 
 const AboutMe = () => {
   const [shouldShow, setShouldShow] = useState(false);
@@ -54,14 +53,13 @@ const AboutMe = () => {
                 developer with experience creating custom websites with ReactJs,
                 Node, Express, Mongo, and PostgreSQL.
               </Typography>
-              <Skills />
             </Grid>
           </Zoom>
-          <Hidden smDown={true}>
+          {/* <Hidden smDown={true}>
             <Grid item>
               <Social direction="column" />
             </Grid>
-          </Hidden>
+          </Hidden> */}
         </Grid>
       </Container>
     </Paper>
