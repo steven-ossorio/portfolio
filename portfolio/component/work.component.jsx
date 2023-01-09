@@ -20,6 +20,7 @@ const Work = () => {
       sx={{
         padding: "10px",
       }}
+      id="work"
     >
       <Container
         maxWidth="md"
@@ -57,6 +58,8 @@ const Work = () => {
                     flexWrap: "wrap",
                   }}
                 >
+                  <Chip label="Solidity" variant="outlined"></Chip>
+                  <Chip label="AWS" variant="outlined"></Chip>
                   <Chip label="Excel" variant="outlined"></Chip>
                   <Chip label="Github" variant="outlined"></Chip>
                   <Chip label="Netlify" variant="outlined"></Chip>

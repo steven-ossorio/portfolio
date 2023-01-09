@@ -18,20 +18,7 @@ const socialItems = [
 
 const Social = ({ direction }) => {
   return (
-    <Box
-      display="flex"
-      flexDirection="column"
-      alignItems="center"
-      spacing={2}
-      position="fixed"
-    >
-      <Typography>S</Typography>
-      <Typography>O</Typography>
-      <Typography>C</Typography>
-      <Typography>I</Typography>
-      <Typography>A</Typography>
-      <Typography>L</Typography>
-      <Typography>S</Typography>
+    <Box display="flex" spacing={2} alignSelf="flex-start" mt={4}>
       {socialItems.map((item) => (
         <Grid item key={item.name}>
           <Link href={item.url}>

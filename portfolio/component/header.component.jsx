@@ -23,7 +23,7 @@ const navigationLinks = [
   },
   {
     name: "Work",
-    href: "",
+    href: "#work",
   },
   {
     name: "Projects",
