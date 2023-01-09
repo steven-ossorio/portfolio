@@ -16,8 +16,18 @@ import Typography from "@mui/material/Typography";
 
 const Work = () => {
   return (
-    <Paper>
-      <Container maxWidth="md">
+    <Paper
+      sx={{
+        padding: "10px",
+      }}
+    >
+      <Container
+        maxWidth="md"
+        sx={{
+          marginTop: "30px",
+          marginBottom: "30px",
+        }}
+      >
         <Typography variant="h4">Work Experience</Typography>
         <Divider
           sx={{
