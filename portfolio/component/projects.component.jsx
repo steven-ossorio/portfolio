@@ -12,16 +12,17 @@ import {
   IconButton,
   Chip,
   Hidden,
+  Divider,
 } from "@mui/material";
 
 const projectsData = [
   {
     title: "Clothing site",
     description:
-      "A basic ecommerce site with functionality to browse, add, secure",
+      "A basic eCommerce site that will be continually build upon. Allow a user to add a product to the cart, checkout and use a credit card (dummy) for purchase",
     imageUrl: "",
     imageAlt: "",
-    tags: ["ReactJS", "Redux", "Styled-Components"],
+    tags: ["ReactJS", "Redux", "Styled-Components", "Firebase", "Stripe"],
     links: [
       {
         name: "github",
@@ -38,10 +39,10 @@ const projectsData = [
   {
     title: "30 days of CSS",
     description:
-      "A basic ecommerce site with functionality to browse, add, secure",
+      "Self improvement goal. Daily challenge of tackling a specific topic or type of UI to implement in CSS. This can be creating something fun with Transoform/Transition or building a Navbar as practice",
     imageUrl: "",
     imageAlt: "",
-    tags: ["ReactJS", "Redux", "Styled-Components"],
+    tags: ["HTML", "CSS"],
     links: [
       {
         name: "github",
@@ -110,9 +111,21 @@ const Project = ({ title, description, tags, links }) => {
 
 const Projects = () => {
   return (
-    <Container maxWidth="md" id="projects">
+    <Container maxWidth="md" id="projects" mt={10}>
       <Box pt={2} mb={2}>
-        <Typography variant="h4">Projects</Typography>
+        <Typography variant="h4" mt={10}>
+          Projects
+        </Typography>
+        <Divider
+          sx={{
+            color: "red",
+            width: "50%",
+            borderBottomWidth: "3px",
+            backgroundColor: "red",
+            marginBottom: "20px",
+            marginTop: "10px",
+          }}
+        />
       </Box>
       <Grid container direction="column" spacing={4}>
         {projectsData.map((data) => {

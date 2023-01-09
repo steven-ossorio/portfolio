@@ -8,8 +8,11 @@ import {
   Typography,
   Zoom,
   Grid,
+  Fade,
+  Divider,
 } from "@mui/material";
 import Social from "./social.component";
+import Skills from "./skills.component";
 
 const AboutMe = () => {
   const [shouldShow, setShouldShow] = useState(false);
@@ -30,15 +33,28 @@ const AboutMe = () => {
         >
           <Zoom in={shouldShow}>
             <Grid item sm={8}>
-              <Typography component="div" variant="h3">
-                Hi, my name is Mike. I am a Software Engineer
+              <Typography component="div" variant="h4">
+                About me
               </Typography>
-              <Typography component="div" variant="h5">
-                I build websites, web application and responsive websites
+              <Divider
+                sx={{
+                  color: "red",
+                  width: "50%",
+                  borderBottomWidth: "3px",
+                  backgroundColor: "red",
+                  marginBottom: "20px",
+                  marginTop: "10px",
+                }}
+              />
+              <Typography component="div" variant="h6">
+                Hi, my name is Steven. I am Software Engineer who loves to
+                transform ideas into reality using code. With over three years
+                of developing web applications using the latest front-end and
+                UI/UX technologies and full-fledged APIs. Motivated designer and
+                developer with experience creating custom websites with ReactJs,
+                Node, Express, Mongo, and PostgreSQL.
               </Typography>
-              <Box my={5}>
-                <Button variant="outlined">Get in Touch!</Button>
-              </Box>
+              <Skills />
             </Grid>
           </Zoom>
           <Hidden smDown={true}>
