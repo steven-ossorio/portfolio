@@ -13,7 +13,7 @@ const images = [
 
 const Hobbies = () => {
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="md" id="hobbies">
       <Typography component="div" variant="h4" mt={5}>
         My Hobbies <span className="wave">🏋🏻🏎🐾✈️</span>
       </Typography>

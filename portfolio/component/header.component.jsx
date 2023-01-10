@@ -31,6 +31,10 @@ const navigationLinks = [
     href: "#projects",
   },
   {
+    name: "Hobbies",
+    href: "#hobbies",
+  },
+  {
     name: "Resume",
     href: "/steven_resume_2022.pdf",
   },
