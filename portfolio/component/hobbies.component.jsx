@@ -6,7 +6,7 @@ import ImageListItemBar from "@mui/material/ImageListItemBar";
 import Typography from "@mui/material/Typography";
 
 const images = [
-  { img: "steven-f1.png", title: "Formula 1" },
+  { img: "../public/steven-f1.png", title: "Formula 1" },
   { img: "steven-bambi.png", title: "Border Collie" },
   { img: "steven-happy.png", title: "Golden Retriever" },
 ];
