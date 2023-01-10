@@ -1,19 +1,13 @@
 import React, { useEffect, useState } from "react";
 import {
   Box,
-  Button,
   Container,
-  Hidden,
   Paper,
-  Card,
-  CardMedia,
   Typography,
   Zoom,
   Grid,
-  Fade,
   Divider,
 } from "@mui/material";
-import Image from "next/image";
 import Social from "./social.component";
 
 const AboutMe = () => {
