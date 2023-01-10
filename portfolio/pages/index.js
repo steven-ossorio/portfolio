@@ -12,6 +12,8 @@ import Projects from "../component/projects.component";
 import Work from "../component/work.component";
 import Skills from "../component/skills.component";
 import Hobbies from "../component/hobbies.component";
+import Contact from "../component/contact.component";
+import Footer from "../component/foot.component";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,6 +41,8 @@ export default function Home() {
         <Work />
         <Projects />
         <Hobbies />
+        <Contact />
+        <Footer />
       </ThemeProvider>
     </>
   );

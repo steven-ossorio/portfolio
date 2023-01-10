@@ -36,7 +36,7 @@ const AboutMe = () => {
           <Zoom in={shouldShow}>
             <Grid item sm={8}>
               <Typography component="div" variant="h4">
-                About me <span class="wave">👋</span>
+                About me <span className="wave">👋</span>
               </Typography>
               <Divider
                 sx={{
