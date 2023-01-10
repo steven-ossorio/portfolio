@@ -1,7 +1,8 @@
-import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Divider from "@mui/material/Divider";
+import Typography from "@mui/material/Typography";
+
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3Full, DiReact } from "react-icons/di";
 import {

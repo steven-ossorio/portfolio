@@ -1,19 +1,17 @@
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import Chip from "@mui/material/Chip";
+import Divider from "@mui/material/Divider";
+import Grid from "@mui/material/Grid";
+import Hidden from "@mui/material/Hidden";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+
+import Container from "@mui/material/Container";
 import Github from "@mui/icons-material/GitHub";
 import OpenInNew from "@mui/icons-material/OpenInNew";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
-import {
-  Box,
-  Card,
-  CardMedia,
-  CardContent,
-  CardActions,
-  IconButton,
-  Chip,
-  Hidden,
-  Divider,
-} from "@mui/material";
 
 const projectsData = [
   {

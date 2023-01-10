@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import {
-  Box,
-  Container,
-  Paper,
-  Typography,
-  Zoom,
-  Grid,
-  Divider,
-} from "@mui/material";
+
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Divider from "@mui/material/Divider";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import Typography from "@mui/material/Typography";
+import Zoom from "@mui/material/Zoom";
+
 import Social from "./social.component";
 
 const AboutMe = () => {

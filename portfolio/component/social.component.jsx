@@ -1,7 +1,12 @@
 import React from "react";
+
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
+import IconButton from "@mui/material/IconButton";
+import Link from "@mui/material/Link";
+
 import GitHub from "@mui/icons-material/GitHub";
 import LinkedIn from "@mui/icons-material/LinkedIn";
-import { IconButton, Link, Grid, Typography, Box } from "@mui/material";
 
 const socialItems = [
   {
