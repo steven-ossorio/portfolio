@@ -6,7 +6,7 @@ import ImageListItemBar from "@mui/material/ImageListItemBar";
 import Typography from "@mui/material/Typography";
 
 const images = [
-  { img: "../public/steven-f1.png", title: "Formula 1" },
+  { img: "steven-f1.png", title: "Formula 1" },
   { img: "steven-bambi.png", title: "Border Collie" },
   { img: "steven-happy.png", title: "Golden Retriever" },
 ];
@@ -32,7 +32,6 @@ const Hobbies = () => {
           <ImageListItem key={item.img}>
             <img
               src={`${item.img}?w=248&fit=crop&auto=format`}
-              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
               alt={item.title}
               loading="lazy"
             />
