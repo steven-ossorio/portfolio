@@ -17,7 +17,8 @@ const projectsData = [
   {
     title: "Clothing site",
     description:
-      "A basic eCommerce site that will be continually build upon. Allow a user to add a product to the cart, checkout and use a credit card (dummy) for purchase",
+      "An eCommerce clothing site. The development will be continous as further improvement are done over the course of the year",
+
     imageUrl: "",
     imageAlt: "",
     tags: ["ReactJS", "Redux", "Styled-Components", "Firebase", "Stripe"],
@@ -25,19 +26,19 @@ const projectsData = [
       {
         name: "github",
         icon: Github,
-        href: "",
+        href: "https://github.com/steven-ossorio/basic_ecommerce",
       },
       {
         name: "open",
         icon: OpenInNew,
-        href: "",
+        href: "https://keen-croissant-503685.netlify.app",
       },
     ],
   },
   {
     title: "30 days of CSS",
     description:
-      "Self improvement goal. Daily challenge of tackling a specific topic or type of UI to implement in CSS. This can be creating something fun with Transoform/Transition or building a Navbar as practice",
+      "Improvement is done with consistency. Goal is to continue to develop a specific minor project to further improve CSS fundamentals. Examples will be Navbar, Sidebar, Image Gallery etc",
     imageUrl: "",
     imageAlt: "",
     tags: ["HTML", "CSS"],
@@ -45,12 +46,12 @@ const projectsData = [
       {
         name: "github",
         icon: Github,
-        href: "",
+        href: "https://github.com/steven-ossorio/30-days-of-css",
       },
       {
         name: "open",
         icon: OpenInNew,
-        href: "",
+        href: "/css",
       },
     ],
   },

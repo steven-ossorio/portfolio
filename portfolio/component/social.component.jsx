@@ -12,12 +12,12 @@ const socialItems = [
   {
     name: "github",
     icon: GitHub,
-    url: "",
+    url: "https://github.com/steven-ossorio",
   },
   {
     name: "linkedin",
     icon: LinkedIn,
-    url: "",
+    url: "https://www.linkedin.com/in/steven-ossorio/",
   },
 ];
 
