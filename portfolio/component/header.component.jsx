@@ -47,7 +47,18 @@ const Header = () => {
       <AppBar position="sticky" color="default">
         <Container maxWidth="md">
           <Toolbar disableGutters>
-            <Avatar className="avatar">S</Avatar>
+            <Avatar
+              sx={{
+                marginRight: "auto",
+                color: "white",
+                backgroundColor: "black",
+                borderRadius: "0",
+                height: "30px",
+                border: "2px solid gray",
+              }}
+            >
+              S
+            </Avatar>
             <Hidden smDown>
               {navigationLinks.map((item) => (
                 <Link

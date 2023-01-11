@@ -140,15 +140,6 @@ a {
   margin-right: 20px;
 }
 
-.avatar {
-  margin-right: auto;
-  color: white;
-  background-color: black;
-  border-radius: 0;
-  height: 30px;
-  border: 2px solid gray;
-}
-
 .resume {
   border: 1px solid red;
   padding: 10px;
