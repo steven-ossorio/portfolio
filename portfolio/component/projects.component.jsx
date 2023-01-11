@@ -93,7 +93,11 @@ const Project = ({ title, description, tags, links }) => {
           <div className="links">
             {links.map((linkItem) => {
               return (
-                <Link href={linkItem.href}>
+                <Link
+                  style={{ marginLeft: "10px" }}
+                  key={linkItem.name}
+                  href={linkItem.href}
+                >
                   <linkItem.icon />
                 </Link>
               );
