@@ -61,7 +61,14 @@ const Header = () => {
               S
             </Avatar>
             <Hidden smDown>
-              <Box>
+              <Box
+                sx={{
+                  width: "50%",
+                  display: "flex",
+                  justifyContent: "space-around",
+                  alignItems: "center",
+                }}
+              >
                 {navigationLinks.map((item) => (
                   <Link
                     key={item.name}
