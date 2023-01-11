@@ -1,4 +1,5 @@
 const FirstDayCss = () => {
+  console.log("loading the css project");
   return (
     <div
       style={{
