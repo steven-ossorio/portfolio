@@ -4,6 +4,7 @@ import FirstDayCss from "../../../component/first-day-css.component";
 const cssSingle = () => {
   const route = useRouter();
   const { id } = route.query;
+  console.log("single page is loading");
   return (
     <div
       style={{
