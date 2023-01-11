@@ -17,6 +17,7 @@ import Toolbar from "@mui/material/Toolbar";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 import "../styles/Home.module.css";
+import { Typography } from "@mui/material";
 
 const navigationLinks = [
   {
@@ -78,7 +79,7 @@ const Header = () => {
                     underline="none"
                     href={item.href}
                   >
-                    {item.name}
+                    <Typography>{item.name}</Typography>
                   </Link>
                 ))}
               </Box>
