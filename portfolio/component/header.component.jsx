@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import AppBar from "@mui/material/AppBar";
 import Avatar from "@mui/material/Avatar";
+import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Divider from "@mui/material/Divider";
 import Hidden from "@mui/material/Hidden";
@@ -60,18 +61,20 @@ const Header = () => {
               S
             </Avatar>
             <Hidden smDown>
-              {navigationLinks.map((item) => (
-                <Link
-                  key={item.name}
-                  className={item.name === "Resume" ? "resume box" : "link"}
-                  color="textPrimary"
-                  variant="button"
-                  underline="none"
-                  href={item.href}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              <Box>
+                {navigationLinks.map((item) => (
+                  <Link
+                    key={item.name}
+                    className={item.name === "Resume" ? "resume box" : "link"}
+                    color="textPrimary"
+                    variant="button"
+                    underline="none"
+                    href={item.href}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </Box>
             </Hidden>
             <Hidden smUp>
               <MenuIcon onClick={() => setOpen(true)} />
