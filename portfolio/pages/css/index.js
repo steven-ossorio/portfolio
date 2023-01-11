@@ -16,6 +16,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
+import FirstDayCss from "../../component/first-day-css.component";
 
 const cssProjects = [
   {
@@ -34,7 +35,8 @@ const cssProjects = [
 const Resume = () => {
   return (
     <Container>
-      {cssProjects.map((project, index) => {
+      <FirstDayCss />
+      {/* {cssProjects.map((project, index) => {
         return (
           <Card sx={{ maxWidth: 500 }}>
             <CardHeader title={project.title} subheader={project.subheader} />
@@ -55,7 +57,7 @@ const Resume = () => {
             </CardActions>
           </Card>
         );
-      })}
+      })} */}
     </Container>
   );
 };
