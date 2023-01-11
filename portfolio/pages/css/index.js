@@ -51,11 +51,9 @@ const Resume = () => {
               <IconButton aria-label="open github" href={project.github}>
                 <project.githubIcon />
               </IconButton>
-              {/* <IconButton aria-label="open project" href={`/css/${project.id}`}> */}
               <Link href={`/css/${project.id}`}>
                 <project.openInNew />
               </Link>
-              {/* </IconButton> */}
             </CardActions>
           </Card>
         );

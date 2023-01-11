@@ -8,7 +8,7 @@ import Grid from "@mui/material/Grid";
 import Hidden from "@mui/material/Hidden";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-
+import Link from "next/link";
 import Container from "@mui/material/Container";
 import Github from "@mui/icons-material/GitHub";
 import OpenInNew from "@mui/icons-material/OpenInNew";
@@ -93,9 +93,9 @@ const Project = ({ title, description, tags, links }) => {
           <div className="links">
             {links.map((linkItem) => {
               return (
-                <IconButton key={linkItem.name} href={linkItem.href}>
+                <Link href={linkItem.href}>
                   <linkItem.icon />
-                </IconButton>
+                </Link>
               );
             })}
           </div>
