@@ -5,6 +5,8 @@ import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import Container from "@mui/material/Container";
 
+import Link from "next/link";
+
 import Collapse from "@mui/material/Collapse";
 import Avatar from "@mui/material/Avatar";
 import IconButton, { IconButtonProps } from "@mui/material/IconButton";
@@ -34,7 +36,7 @@ const cssProjects = [
 const Resume = () => {
   return (
     <Container>
-      {cssProjects.map((project, index) => {
+      {cssProjects.map((project) => {
         return (
           <Card sx={{ maxWidth: 500 }}>
             <CardHeader title={project.title} subheader={project.subheader} />
@@ -49,9 +51,11 @@ const Resume = () => {
               <IconButton aria-label="open github" href={project.github}>
                 <project.githubIcon />
               </IconButton>
-              <IconButton aria-label="open project" href={`/css/${index}`}>
+              {/* <IconButton aria-label="open project" href={`/css/${project.id}`}> */}
+              <Link href={`/css/${project.id}`}>
                 <project.openInNew />
-              </IconButton>
+              </Link>
+              {/* </IconButton> */}
             </CardActions>
           </Card>
         );
