@@ -34,7 +34,7 @@ const cssProjects = [
 const Resume = () => {
   return (
     <Container>
-      {cssProjects.map((project) => {
+      {cssProjects.map((project, index) => {
         return (
           <Card sx={{ maxWidth: 500 }}>
             <CardHeader title={project.title} subheader={project.subheader} />
@@ -49,7 +49,7 @@ const Resume = () => {
               <IconButton aria-label="open github" href={project.github}>
                 <project.githubIcon />
               </IconButton>
-              <IconButton aria-label="open project" href={`/css/${project.id}`}>
+              <IconButton aria-label="open project" href={`/css/${index + 1}`}>
                 <project.openInNew />
               </IconButton>
             </CardActions>
