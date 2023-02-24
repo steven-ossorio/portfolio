@@ -14,18 +14,10 @@ import Skills from "../component/skills.component";
 import Hobbies from "../component/hobbies.component";
 import Contact from "../component/contact.component";
 import Footer from "../component/footer.component";
-
-const inter = Inter({ subsets: ["latin"] });
-
-let darkTheme = createTheme({
-  palette: {
-    mode: "dark",
-  },
-});
-
-darkTheme = responsiveFontSizes(darkTheme);
+import { useState } from "react";
 
 export default function Home() {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
       <Head>
@@ -34,16 +26,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ThemeProvider theme={darkTheme}>
-        <Header />
+      <div className="container max-w-md md:max-w-2xl xl:max-w-4xl">
         <AboutMe />
         <Skills />
         <Work />
         <Projects />
-        <Hobbies />
-        <Contact />
         <Footer />
-      </ThemeProvider>
+      </div>
     </>
   );
 }

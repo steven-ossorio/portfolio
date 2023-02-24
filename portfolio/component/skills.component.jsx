@@ -60,7 +60,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <Container maxWidth="md" sx={{ marginTop: "50px" }}>
+    <Container id="skills" maxWidth="md" sx={{ marginTop: "50px" }}>
       <Typography component="div" variant="h4">
         Skills
       </Typography>
