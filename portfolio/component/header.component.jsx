@@ -45,7 +45,7 @@ const navigationLinks = [
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
   return (
-    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 lg:hidden">
       <div class="container flex flex-wrap items-center justify-between mx-auto">
         <a href="https://flowbite.com/" class="flex items-center">
           <img

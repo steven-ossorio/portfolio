@@ -150,9 +150,9 @@ const Project = ({
 
 const Projects = () => {
   return (
-    <div className="container max-w-md md:max-w-2xl xl:max-w-4xl pl-4 pr-4 mb-4 mt-4">
+    <div className="container max-w-md md:max-w-2xl xl:max-w-4xl pl-4 pr-4 mb-4 mt-4 lg:p-0 lg:m-0">
       <div className="pt-12 md:py-12 sm:px-5 md:px-10 lg:px-14">
-        <div className="text-4xl mb-4 bold">Projects</div>
+        <div className="text-4xl mb-4 bold lg:mt-8">Projects</div>
         <hr class="w-48 h-1 my-4 bg-red-600 border-0 rounded md:my-10 dark:bg-gray-700" />
       </div>
       <div className=" mx-auto grid grid-cols-1 md:max-w-2xl md:grid-cols-2 gap-3 xl:gap-y-6 xl:gap-x-32 xl:grid-cols-3 xl:max-w-4xl justify-items-center mt-5">
