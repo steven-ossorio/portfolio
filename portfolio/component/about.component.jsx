@@ -8,13 +8,6 @@ import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import Zoom from "@mui/material/Zoom";
 
-import Social from "./social.component";
-
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import { Button, CardActionArea, CardActions } from "@mui/material";
-
 const AboutMe = () => {
   const [shouldShow, setShouldShow] = useState(false);
 
@@ -26,7 +19,7 @@ const AboutMe = () => {
     <div>
       <div className="container max-w-md md:max-w-2xl xl:max-w-4xl flex flex-col justify-between mx-auto">
         <div className="pt-12 md:py-12 sm:px-5 md:px-10 lg:px-14">
-          <div className="text-5xl p-5 bold">About Me</div>
+          <div className="text-5xl p-5 text-black bold">About Me</div>
           <hr class="hidden md:block w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
         </div>
         <div class="flex items-center justify-center drop-shadow-xl">
@@ -36,7 +29,7 @@ const AboutMe = () => {
             alt="placeholder image"
           />
         </div>
-        <h2 className="mt-6 self-center text-[26px] font-semibold mb-1 dark:text-white">
+        <h2 className="mt-6 self-center text-[26px] font-semibold mb-1 text-black">
           Steven Ossorio
         </h2>
         <h3 className="mb-4 self-center text-[#7B7B7B] inline-block dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg dark:text-[#A6A6A6]">

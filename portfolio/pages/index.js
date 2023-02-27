@@ -1,23 +1,12 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
-
-import {
-  createTheme,
-  ThemeProvider,
-  responsiveFontSizes,
-} from "@mui/material/styles";
-import Header from "../component/header.component";
 import AboutMe from "../component/about.component";
 import Projects from "../component/projects.component";
 import Work from "../component/work.component";
 import Skills from "../component/skills.component";
-import Hobbies from "../component/hobbies.component";
-import Contact from "../component/contact.component";
 import Footer from "../component/footer.component";
 import { useState } from "react";
 
 export default function Home() {
-  const [showModal, setShowModal] = useState(false);
   const [topic, setTopic] = useState("aboutme");
   return (
     <>
@@ -44,14 +33,19 @@ export default function Home() {
                 alt="placeholder image"
               />
             </div>
-            <h2 className="mt-6 self-center text-[26px] font-semibold mb-1 dark:text-white">
+            <h3 className="mt-2 mb-2 self-center inline-block bg-[#1D1D1D] px-5 py-1.5 rounded-lg text-white">
               Steven Ossorio
-            </h2>
-            <h3 className="mb-4 self-center text-[#7B7B7B] inline-block dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg dark:text-[#A6A6A6]">
+            </h3>
+            {/* <h2 className="mt-6 self-center text-[26px] font-semibold mb-1">
+              Steven Ossorio
+            </h2> */}
+            <h3 className="mb-4 self-center inline-block bg-[#1D1D1D] px-5 py-1.5 rounded-lg text-white">
               Software Engineer
             </h3>
             <div className="flex justify-center space-x-3 items-center">
-              <button
+              <a
+                href="https://github.com/steven-ossorio"
+                target="_blank"
                 type="button"
                 data-te-ripple-init
                 data-te-ripple-color="light"
@@ -66,8 +60,10 @@ export default function Home() {
                 >
                   <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                 </svg>
-              </button>
-              <button
+              </a>
+              <a
+                href="https://www.linkedin.com/in/steven-ossorio/"
+                target="_blank"
                 type="button"
                 data-te-ripple-init
                 data-te-ripple-color="light"
@@ -82,11 +78,11 @@ export default function Home() {
                 >
                   <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                 </svg>
-              </button>
+              </a>
             </div>
-            <div className="p-7 rounded-2xl mt-7 bg-[#F3F6F6] dark:bg-[#1D1D1D]">
-              <div className="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5">
-                <span className="flex h-10 w-10 items-center justify-center bg-white dark:bg-black text-[#E93B81] shadow-md">
+            <div className="p-7 rounded-2xl mt-7 bg-[#1D1D1D]">
+              <div className="flex border-b border-[#3D3A3A] pb-2.5">
+                <span className="flex h-10 w-10 items-center justify-center bg-black text-[#E93B81] shadow-md">
                   <svg
                     fill="none"
                     class="h-4 w-4"
@@ -104,16 +100,12 @@ export default function Home() {
                   </svg>
                 </span>
                 <div className="text-left ml-2.5">
-                  <div className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
-                    Phone
-                  </div>
-                  <div className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
-                    718-581-9131
-                  </div>
+                  <div className="text-xs text-[#A6A6A6]">Phone</div>
+                  <div className="text-xs text-[#A6A6A6]">718-581-9131</div>
                 </div>
               </div>
-              <div className="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] py-2.5">
-                <span className="flex h-10 w-10 items-center justify-center bg-white dark:bg-black text-[#6AB5B9] shadow-md">
+              <div className="flex border-b border-[#3D3A3A] py-2.5">
+                <span className="flex h-10 w-10 items-center justify-center bg-black text-[#6AB5B9] shadow-md">
                   <svg
                     fill="none"
                     class="h-4 w-4"
@@ -131,16 +123,14 @@ export default function Home() {
                   </svg>
                 </span>
                 <div className="text-left ml-2.5">
-                  <div className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
-                    Email
-                  </div>
-                  <div className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
+                  <div className="text-xs text-[#A6A6A6]">Email</div>
+                  <div className="text-xs text-[#A6A6A6]">
                     usa.s.ossorio@gmail.com
                   </div>
                 </div>
               </div>
               <div className="flex py-2.5">
-                <span className="flex h-10 w-10 items-center justify-center bg-white dark:bg-black text-[#C17CEB] shadow-md">
+                <span className="flex h-10 w-10 items-center justify-center bg-black text-[#C17CEB] shadow-md">
                   <svg
                     fill="none"
                     class="h-4 w-4"
@@ -163,12 +153,8 @@ export default function Home() {
                   </svg>
                 </span>
                 <div className="text-left ml-2.5">
-                  <div className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
-                    Location
-                  </div>
-                  <div className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
-                    Houston, TX, USA
-                  </div>
+                  <div className="text-xs text-[#A6A6A6]">Location</div>
+                  <div className="text-xs text-[#A6A6A6]">Houston, TX, USA</div>
                 </div>
               </div>
             </div>
@@ -177,7 +163,7 @@ export default function Home() {
                 href="resume-2023.pdf"
                 target="_blank"
                 type="button"
-                class="flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-3xl text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                class="flex items-center text-white focus:ring-4  font-medium rounded-3xl text-sm px-5 py-2.5 mr-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-blue-800"
               >
                 <svg
                   fill="none"
@@ -200,22 +186,22 @@ export default function Home() {
           </div>
         </div>
         <div className="col-span-12 lg:col-span-8">
-          <div class="border-b border-gray-200 dark:border-gray-700">
-            <ul class="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400">
+          <div class="border-b border-gray-700">
+            <ul class="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-400">
               <li class="mr-2" onClick={() => setTopic("aboutme")}>
                 <a
                   class={`${
                     topic == "aboutme"
-                      ? "text-blue-600 border-b-2 border-blue-600 active dark:text-blue-500 dark:border-blue-500"
-                      : "border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                      ? "border-b-2 active text-blue-500 border-blue-500"
+                      : "border-b-2 border-transparent  hover:border-gray-300 hover:text-gray-300"
                   } inline-flex p-4 rounded-t-lg group`}
                 >
                   <svg
                     aria-hidden="true"
                     class={`${
                       topic == "aboutme"
-                        ? "text-blue-600 dark:text-blue-500"
-                        : "text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-300"
+                        ? "text-blue-500"
+                        : "text-gray-500 group-hover:text-gray-300"
                     } w-5 h-5 mr-2`}
                     fill="currentColor"
                     viewBox="0 0 20 20"
@@ -234,16 +220,16 @@ export default function Home() {
                 <a
                   class={`${
                     topic == "work"
-                      ? "text-blue-600 border-b-2 border-blue-600 active dark:text-blue-500 dark:border-blue-500"
-                      : "border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                      ? " border-b-2 active text-blue-500 border-blue-500"
+                      : "border-b-2 border-transparent  border-gray-300 hover:text-gray-300"
                   } inline-flex p-4 rounded-t-lg group`}
                 >
                   <svg
                     aria-hidden="true"
                     class={`${
                       topic == "work"
-                        ? "text-blue-600 dark:text-blue-500"
-                        : "text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-300"
+                        ? "text-blue-500"
+                        : " text-gray-500 group-hover:text-gray-300"
                     } w-5 h-5 mr-2`}
                     fill="currentColor"
                     viewBox="0 0 20 20"
@@ -258,16 +244,16 @@ export default function Home() {
                 <a
                   class={`${
                     topic == "skills"
-                      ? "text-blue-600 border-b-2 border-blue-600 active dark:text-blue-500 dark:border-blue-500"
-                      : "border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                      ? " border-b-2  active text-blue-500 border-blue-500"
+                      : "border-b-2 border-transparent hover:border-gray-300 hover:text-gray-300"
                   } inline-flex p-4 rounded-t-lg group`}
                 >
                   <svg
                     aria-hidden="true"
                     class={`${
                       topic == "skills"
-                        ? "text-blue-600 dark:text-blue-500"
-                        : "text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-300"
+                        ? "text-blue-500"
+                        : "text-gray-500 group-hover:text-gray-300"
                     } w-5 h-5 mr-2`}
                     fill="currentColor"
                     viewBox="0 0 20 20"
@@ -282,16 +268,16 @@ export default function Home() {
                 <a
                   class={`${
                     topic == "projects"
-                      ? "text-blue-600 border-b-2 border-blue-600 active dark:text-blue-500 dark:border-blue-500"
-                      : "border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                      ? "border-b-2 active text-blue-500 border-blue-500"
+                      : "border-b-2 border-transparenthover:border-gray-300 hover:text-gray-300"
                   } inline-flex p-4 rounded-t-lg group`}
                 >
                   <svg
                     aria-hidden="true"
                     class={`${
                       topic == "projects"
-                        ? "text-blue-600 dark:text-blue-500"
-                        : "text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-300"
+                        ? "text-blue-500"
+                        : "text-gray-500 group-hover:text-gray-300"
                     } w-5 h-5 mr-2`}
                     fill="currentColor"
                     viewBox="0 0 20 20"
@@ -312,9 +298,9 @@ export default function Home() {
                     <div className="lg:mr-16">
                       <div>
                         <div className="text-4xl mb-4 bold">About Me</div>
-                        <hr class="w-48 h-1 my-4 bg-red-600 border-0 rounded md:my-10 dark:bg-gray-700" />
+                        <hr class="w-48 h-1 my-4 border-0 rounded md:my-10 bg-gray-700" />
                       </div>
-                      <p className="text-[#44566c] dark:text-color-910 leading-7">
+                      <p className="text-color-910 leading-7">
                         As a software engineer, I am constantly seeking new
                         challenges and opportunities to grow. I believe that
                         true improvements can only be found when we step outside
@@ -334,15 +320,15 @@ export default function Home() {
             <div>
               <div>
                 <div className="text-4xl mb-4 bold mt-8">Work History</div>
-                <hr class="w-48 h-1 my-4 bg-red-600 border-0 rounded md:my-10 dark:bg-gray-700" />
+                <hr class="w-48 h-1 my-4 border-0 rounded md:my-10 bg-gray-700" />
               </div>
-              <ol class="relative border-l border-gray-200 dark:border-gray-700">
+              <ol class="relative border-l border-gray-700">
                 <li class="mb-10 ml-4">
-                  <div class="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                  <div class="absolute w-3 h-3 rounded-full -left-1.5 border border-gray-900 bg-gray-700"></div>
+                  <time class="mb-1 text-sm font-normal leading-none text-gray-500">
                     2021-2022
                   </time>
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                  <h3 class="text-lg font-semibold text-gray-900">
                     Crypto Project - Engineering Manager
                   </h3>
                   <div className="flex flex-row flex-wrap">
@@ -350,7 +336,7 @@ export default function Home() {
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] bg-[#eceff1] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose text-[#4f4f4f] shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] dark:bg-neutral-600 dark:text-neutral-200"
+                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         NextJS
@@ -360,7 +346,7 @@ export default function Home() {
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] bg-[#eceff1] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose text-[#4f4f4f] shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] dark:bg-neutral-600 dark:text-neutral-200"
+                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         Solidity
@@ -370,7 +356,7 @@ export default function Home() {
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] bg-[#eceff1] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose text-[#4f4f4f] shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] dark:bg-neutral-600 dark:text-neutral-200"
+                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         AWS
@@ -380,7 +366,7 @@ export default function Home() {
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] bg-[#eceff1] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose text-[#4f4f4f] shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] dark:bg-neutral-600 dark:text-neutral-200"
+                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         Netlify
@@ -390,7 +376,7 @@ export default function Home() {
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] bg-[#eceff1] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose text-[#4f4f4f] shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] dark:bg-neutral-600 dark:text-neutral-200"
+                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         Github
@@ -399,11 +385,11 @@ export default function Home() {
                   </div>
                 </li>
                 <li class="mb-10 ml-4">
-                  <div class="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                  <div class="absolute w-3 h-3 rounded-full -left-1.5 border border-gray-900 bg-gray-700"></div>
+                  <time class="mb-1 text-sm font-normal leading-none text-gray-500">
                     2019-2020
                   </time>
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                  <h3 class="text-lg font-semibold text-gray-900">
                     Wayfair - Software Engineer
                   </h3>
                   <div className="flex flex-row flex-wrap">
@@ -411,7 +397,7 @@ export default function Home() {
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] bg-[#eceff1] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose text-[#4f4f4f] shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] dark:bg-neutral-600 dark:text-neutral-200"
+                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         ReactJS
@@ -421,7 +407,7 @@ export default function Home() {
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] bg-[#eceff1] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose text-[#4f4f4f] shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] dark:bg-neutral-600 dark:text-neutral-200"
+                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         CSS
@@ -431,7 +417,7 @@ export default function Home() {
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] bg-[#eceff1] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose text-[#4f4f4f] shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] dark:bg-neutral-600 dark:text-neutral-200"
+                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         GraphQL
@@ -441,7 +427,7 @@ export default function Home() {
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] bg-[#eceff1] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose text-[#4f4f4f] shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] dark:bg-neutral-600 dark:text-neutral-200"
+                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         Redux
@@ -451,7 +437,7 @@ export default function Home() {
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] bg-[#eceff1] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose text-[#4f4f4f] shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] dark:bg-neutral-600 dark:text-neutral-200"
+                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         PHP
@@ -461,7 +447,7 @@ export default function Home() {
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] bg-[#eceff1] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose text-[#4f4f4f] shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] dark:bg-neutral-600 dark:text-neutral-200"
+                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         MySQL
@@ -471,7 +457,7 @@ export default function Home() {
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] bg-[#eceff1] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose text-[#4f4f4f] shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] dark:bg-neutral-600 dark:text-neutral-200"
+                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         Github
@@ -480,11 +466,11 @@ export default function Home() {
                   </div>
                 </li>
                 <li class="ml-4">
-                  <div class="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                  <div class="absolute w-3 h-3 rounded-full -left-1.5 border border-gray-900 bg-gray-700"></div>
+                  <time class="mb-1 text-sm font-normal leading-none text-gray-500">
                     2015-2017
                   </time>
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                  <h3 class="text-lg font-semibold text-gray-900">
                     Don Karpov - Production Assistant
                   </h3>
                   <div className="flex flex-row flex-wrap">
@@ -492,7 +478,7 @@ export default function Home() {
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] bg-[#eceff1] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose text-[#4f4f4f] shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] dark:bg-neutral-600 dark:text-neutral-200"
+                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         PowerDirector
@@ -502,7 +488,7 @@ export default function Home() {
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] bg-[#eceff1] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose text-[#4f4f4f] shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] dark:bg-neutral-600 dark:text-neutral-200"
+                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         Adobe Premiere Pro
@@ -512,7 +498,7 @@ export default function Home() {
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] bg-[#eceff1] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose text-[#4f4f4f] shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] dark:bg-neutral-600 dark:text-neutral-200"
+                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         DropBox

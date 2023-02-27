@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const projectsData = [
   {
     title: "Jobs",
@@ -47,7 +45,7 @@ const TagsContainer = ({ tags }) => {
             <div
               data-te-chip-init
               data-te-ripple-init
-              class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] bg-[#eceff1] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose text-[#4f4f4f] shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] dark:bg-neutral-600 dark:text-neutral-200"
+              class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
               data-te-close="true"
             >
               {tagItem}
@@ -67,33 +65,37 @@ const Project = ({
   links: { github, website },
 }) => {
   return (
-    <div className="mb-12 max-w-sm mb-30 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className="mb-12 max-w-sm mb-30 border rounded-lg shadow border-gray-700">
       <a href="#">
         <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
       </a>
       <div class="p-5">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
           {title}
         </h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          {description}
-        </p>
+        <p class="mb-3 font-normal text-neutral-200">{description}</p>
         {inDevelopment && (
           <div
-            class="flex items-center mb-3 bg-blue-500 text-white text-sm font-bold px-4 py-3"
+            class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md"
             role="alert"
           >
-            <svg
-              class="fill-current w-4 h-4 mr-2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467 1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20z" />
-            </svg>
-            <p>
-              Project is in development. Check the Github for updates. Expected
-              completion March 14th
-            </p>
+            <div class="flex">
+              <div class="py-1">
+                <svg
+                  class="fill-current h-6 w-6 text-teal-500 mr-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" />
+                </svg>
+              </div>
+              <div>
+                <p class="font-bold">Our privacy policy has changed</p>
+                <p class="text-sm">
+                  Make sure you know how these changes affect you.
+                </p>
+              </div>
+            </div>
           </div>
         )}
         {github && (

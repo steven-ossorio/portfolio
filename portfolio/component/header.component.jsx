@@ -1,47 +1,5 @@
 import React, { useState } from "react";
 
-import AppBar from "@mui/material/AppBar";
-import Avatar from "@mui/material/Avatar";
-import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
-import Divider from "@mui/material/Divider";
-import Hidden from "@mui/material/Hidden";
-import IconButton from "@mui/material/IconButton";
-import Link from "@mui/material/Link";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import MenuIcon from "@mui/icons-material/Menu";
-import SwipeableDrawer from "@mui/material/SwipeableDrawer";
-import Toolbar from "@mui/material/Toolbar";
-
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-
-import "../styles/Home.module.css";
-import { Typography } from "@mui/material";
-
-const navigationLinks = [
-  {
-    name: "About",
-    href: "#about",
-  },
-  {
-    name: "Work",
-    href: "#work",
-  },
-  {
-    name: "Projects",
-    href: "#projects",
-  },
-  {
-    name: "Hobbies",
-    href: "#hobbies",
-  },
-  {
-    name: "Resume",
-    href: "/steven_resume_2022.pdf",
-  },
-];
-
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
   return (
