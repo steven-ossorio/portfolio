@@ -12,9 +12,9 @@ const AboutMe = () => {
       <div className="container max-w-md md:max-w-2xl xl:max-w-4xl flex flex-col justify-between mx-auto">
         <div className="pt-12 md:py-12 sm:px-5 md:px-10 lg:px-14">
           <div className="text-5xl p-5 text-black bold">About Me</div>
-          <hr class="hidden md:block w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+          <hr className="hidden md:block w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
         </div>
-        <div class="flex items-center justify-center drop-shadow-xl">
+        <div className="flex items-center justify-center drop-shadow-xl">
           <img
             className="w-[240px] h-[240px] drop-shadow-xl mx-auto rounded-[20px]"
             src="steven-f1.png"
@@ -53,7 +53,7 @@ const AboutMe = () => {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4"
+              className="h-4 w-4"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -66,16 +66,16 @@ const AboutMe = () => {
             <span className="flex h-10 w-10 items-center justify-center bg-white dark:bg-black text-[#E93B81] shadow-md">
               <svg
                 fill="none"
-                class="h-4 w-4"
+                className="h-4 w-4"
                 stroke="currentColor"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
                 ></path>
               </svg>
@@ -93,16 +93,16 @@ const AboutMe = () => {
             <span className="flex h-10 w-10 items-center justify-center bg-white dark:bg-black text-[#6AB5B9] shadow-md">
               <svg
                 fill="none"
-                class="h-4 w-4"
+                className="h-4 w-4"
                 stroke="currentColor"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
                 ></path>
               </svg>
@@ -120,21 +120,21 @@ const AboutMe = () => {
             <span className="flex h-10 w-10 items-center justify-center bg-white dark:bg-black text-[#C17CEB] shadow-md">
               <svg
                 fill="none"
-                class="h-4 w-4"
+                className="h-4 w-4"
                 stroke="currentColor"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
                 ></path>
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                 ></path>
               </svg>
@@ -154,20 +154,20 @@ const AboutMe = () => {
             href="resume-2023.pdf"
             target="_blank"
             type="button"
-            class="flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-3xl text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            className="flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-3xl text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
             <svg
               fill="none"
               stroke="currentColor"
-              stroke-width="1.5"
-              class="h-6 w-6 pr-1"
+              strokeWidth="1.5"
+              className="h-6 w-6 pr-1"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3"
               ></path>
             </svg>

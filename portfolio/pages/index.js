@@ -26,7 +26,7 @@ export default function Home() {
       <div className="container grid grid-cols-12 md:gap-10 justify-between lg:mt-[220px] lg:my-0 lg:mx-auto">
         <div className="col-span-12 lg:col-span-4 hidden lg:block h-screen sticky top-44">
           <div className="container max-w-md md:max-w-2xl xl:max-w-4xl flex flex-col justify-between mx-auto">
-            <div class="flex items-center justify-center drop-shadow-xl">
+            <div className="flex items-center justify-center drop-shadow-xl">
               <img
                 className="w-[240px] h-[240px] drop-shadow-xl mx-auto rounded-[20px]"
                 src="steven-f1.png"
@@ -36,9 +36,6 @@ export default function Home() {
             <h3 className="mt-2 mb-2 self-center inline-block bg-[#1D1D1D] px-5 py-1.5 rounded-lg text-white">
               Steven Ossorio
             </h3>
-            {/* <h2 className="mt-6 self-center text-[26px] font-semibold mb-1">
-              Steven Ossorio
-            </h2> */}
             <h3 className="mb-4 self-center inline-block bg-[#1D1D1D] px-5 py-1.5 rounded-lg text-white">
               Software Engineer
             </h3>
@@ -72,7 +69,7 @@ export default function Home() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-4 w-4"
+                  className="h-4 w-4"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -85,16 +82,16 @@ export default function Home() {
                 <span className="flex h-10 w-10 items-center justify-center bg-black text-[#E93B81] shadow-md">
                   <svg
                     fill="none"
-                    class="h-4 w-4"
+                    className="h-4 w-4"
                     stroke="currentColor"
-                    stroke-width="1.5"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
                     ></path>
                   </svg>
@@ -108,16 +105,16 @@ export default function Home() {
                 <span className="flex h-10 w-10 items-center justify-center bg-black text-[#6AB5B9] shadow-md">
                   <svg
                     fill="none"
-                    class="h-4 w-4"
+                    className="h-4 w-4"
                     stroke="currentColor"
-                    stroke-width="1.5"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
                     ></path>
                   </svg>
@@ -133,21 +130,21 @@ export default function Home() {
                 <span className="flex h-10 w-10 items-center justify-center bg-black text-[#C17CEB] shadow-md">
                   <svg
                     fill="none"
-                    class="h-4 w-4"
+                    className="h-4 w-4"
                     stroke="currentColor"
-                    stroke-width="1.5"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
                     ></path>
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                     ></path>
                   </svg>
@@ -163,20 +160,20 @@ export default function Home() {
                 href="resume-2023.pdf"
                 target="_blank"
                 type="button"
-                class="flex items-center text-white focus:ring-4  font-medium rounded-3xl text-sm px-5 py-2.5 mr-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-blue-800"
+                className="flex items-center text-white focus:ring-4  font-medium rounded-3xl text-sm px-5 py-2.5 mr-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-blue-800"
               >
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="1.5"
-                  class="h-6 w-6 pr-1"
+                  strokeWidth="1.5"
+                  className="h-6 w-6 pr-1"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                   aria-hidden="true"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3"
                   ></path>
                 </svg>
@@ -186,14 +183,14 @@ export default function Home() {
           </div>
         </div>
         <div className="col-span-12 lg:col-span-8">
-          <div class="border-b border-gray-700">
-            <ul class="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-400">
+          <div className="border-b border-gray-700">
+            <ul className="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-400">
               <li
-                class="mr-2 cursor-pointer"
+                className="mr-2 cursor-pointer"
                 onClick={() => setTopic("aboutme")}
               >
                 <a
-                  class={`${
+                  className={`${
                     topic == "aboutme"
                       ? " border-b-2 active text-blue-500 border-blue-500"
                       : "border-b-2 border-transparent  border-gray-300 hover:text-gray-300"
@@ -201,7 +198,7 @@ export default function Home() {
                 >
                   <svg
                     aria-hidden="true"
-                    class={`${
+                    className={`${
                       topic == "aboutme"
                         ? "text-blue-500"
                         : "text-gray-500 group-hover:text-gray-300"
@@ -211,17 +208,20 @@ export default function Home() {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                     ></path>
                   </svg>
                   Profile
                 </a>
               </li>
-              <li class="mr-2 cursor-pointer" onClick={() => setTopic("work")}>
+              <li
+                className="mr-2 cursor-pointer"
+                onClick={() => setTopic("work")}
+              >
                 <a
-                  class={`${
+                  className={`${
                     topic == "work"
                       ? " border-b-2 active text-blue-500 border-blue-500"
                       : "border-b-2 border-transparent  border-gray-300 hover:text-gray-300"
@@ -229,7 +229,7 @@ export default function Home() {
                 >
                   <svg
                     aria-hidden="true"
-                    class={`${
+                    className={`${
                       topic == "work"
                         ? "text-blue-500"
                         : " text-gray-500 group-hover:text-gray-300"
@@ -244,11 +244,11 @@ export default function Home() {
                 </a>
               </li>
               <li
-                class="mr-2 cursor-pointer"
+                className="mr-2 cursor-pointer"
                 onClick={() => setTopic("skills")}
               >
                 <a
-                  class={`${
+                  className={`${
                     topic == "skills"
                       ? " border-b-2  active text-blue-500 border-blue-500"
                       : "border-b-2 border-transparent hover:border-gray-300 hover:text-gray-300"
@@ -256,7 +256,7 @@ export default function Home() {
                 >
                   <svg
                     aria-hidden="true"
-                    class={`${
+                    className={`${
                       topic == "skills"
                         ? "text-blue-500"
                         : "text-gray-500 group-hover:text-gray-300"
@@ -271,11 +271,11 @@ export default function Home() {
                 </a>
               </li>
               <li
-                class="mr-2 cursor-pointer"
+                className="mr-2 cursor-pointer"
                 onClick={() => setTopic("projects")}
               >
                 <a
-                  class={`${
+                  className={`${
                     topic == "projects"
                       ? " border-b-2  active text-blue-500 border-blue-500"
                       : "border-b-2 border-transparent hover:border-gray-300 hover:text-gray-300"
@@ -283,7 +283,7 @@ export default function Home() {
                 >
                   <svg
                     aria-hidden="true"
-                    class={`${
+                    className={`${
                       topic == "projects"
                         ? "text-blue-500"
                         : "text-gray-500 group-hover:text-gray-300"
@@ -307,7 +307,7 @@ export default function Home() {
                     <div className="lg:mr-16">
                       <div>
                         <div className="text-4xl mb-4 bold">About Me</div>
-                        <hr class="w-48 h-1 my-4 border-0 rounded md:my-10 bg-gray-700" />
+                        <hr className="w-48 h-1 my-4 border-0 rounded md:my-10 bg-gray-700" />
                       </div>
                       <p className="text-color-910 leading-7">
                         As a software engineer, I am constantly seeking new
@@ -329,63 +329,63 @@ export default function Home() {
             <div>
               <div>
                 <div className="text-4xl mb-4 bold mt-8">Work History</div>
-                <hr class="w-48 h-1 my-4 border-0 rounded md:my-10 bg-gray-700" />
+                <hr className="w-48 h-1 my-4 border-0 rounded md:my-10 bg-gray-700" />
               </div>
-              <ol class="relative border-l border-gray-700">
-                <li class="mb-10 ml-4">
-                  <div class="absolute w-3 h-3 rounded-full -left-1.5 border border-gray-900 bg-gray-700"></div>
-                  <time class="mb-1 text-sm font-normal leading-none text-gray-500">
+              <ol className="relative border-l border-gray-700">
+                <li className="mb-10 ml-4">
+                  <div className="absolute w-3 h-3 rounded-full -left-1.5 border border-gray-900 bg-gray-700"></div>
+                  <time className="mb-1 text-sm font-normal leading-none text-gray-500">
                     2021-2022
                   </time>
-                  <h3 class="text-lg font-semibold text-gray-900">
+                  <h3 className="text-lg font-semibold text-gray-900">
                     Crypto Project - Engineering Manager
                   </h3>
                   <div className="flex flex-row flex-wrap">
-                    <div class="flex  flex-wrap justify-center">
+                    <div className="flex  flex-wrap justify-center">
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
+                        className="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         NextJS
                       </div>
                     </div>
-                    <div class="flex justify-center flex-wrap">
+                    <div className="flex justify-center flex-wrap">
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
+                        className="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         Solidity
                       </div>
                     </div>
-                    <div class="flex flex-wrap justify-center">
+                    <div className="flex flex-wrap justify-center">
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
+                        className="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         AWS
                       </div>
                     </div>
-                    <div class="flex flex-wrap justify-center">
+                    <div className="flex flex-wrap justify-center">
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
+                        className="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         Netlify
                       </div>
                     </div>
-                    <div class="flex flex-wrap justify-center">
+                    <div className="flex flex-wrap justify-center">
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
+                        className="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         Github
@@ -393,80 +393,80 @@ export default function Home() {
                     </div>
                   </div>
                 </li>
-                <li class="mb-10 ml-4">
-                  <div class="absolute w-3 h-3 rounded-full -left-1.5 border border-gray-900 bg-gray-700"></div>
-                  <time class="mb-1 text-sm font-normal leading-none text-gray-500">
+                <li className="mb-10 ml-4">
+                  <div className="absolute w-3 h-3 rounded-full -left-1.5 border border-gray-900 bg-gray-700"></div>
+                  <time className="mb-1 text-sm font-normal leading-none text-gray-500">
                     2019-2020
                   </time>
-                  <h3 class="text-lg font-semibold text-gray-900">
+                  <h3 className="text-lg font-semibold text-gray-900">
                     Wayfair - Software Engineer
                   </h3>
                   <div className="flex flex-row flex-wrap">
-                    <div class="flex  flex-wrap justify-center">
+                    <div className="flex  flex-wrap justify-center">
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
+                        className="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         ReactJS
                       </div>
                     </div>
-                    <div class="flex  flex-wrap justify-center">
+                    <div className="flex  flex-wrap justify-center">
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
+                        className="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         CSS
                       </div>
                     </div>
-                    <div class="flex justify-center flex-wrap">
+                    <div className="flex justify-center flex-wrap">
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
+                        className="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         GraphQL
                       </div>
                     </div>
-                    <div class="flex flex-wrap justify-center">
+                    <div className="flex flex-wrap justify-center">
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
+                        className="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         Redux
                       </div>
                     </div>
-                    <div class="flex flex-wrap justify-center">
+                    <div className="flex flex-wrap justify-center">
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
+                        className="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         PHP
                       </div>
                     </div>
-                    <div class="flex flex-wrap justify-center">
+                    <div className="flex flex-wrap justify-center">
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
+                        className="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         MySQL
                       </div>
                     </div>
-                    <div class="flex flex-wrap justify-center">
+                    <div className="flex flex-wrap justify-center">
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
+                        className="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         Github
@@ -474,40 +474,40 @@ export default function Home() {
                     </div>
                   </div>
                 </li>
-                <li class="ml-4">
-                  <div class="absolute w-3 h-3 rounded-full -left-1.5 border border-gray-900 bg-gray-700"></div>
-                  <time class="mb-1 text-sm font-normal leading-none text-gray-500">
+                <li className="ml-4">
+                  <div className="absolute w-3 h-3 rounded-full -left-1.5 border border-gray-900 bg-gray-700"></div>
+                  <time className="mb-1 text-sm font-normal leading-none text-gray-500">
                     2015-2017
                   </time>
-                  <h3 class="text-lg font-semibold text-gray-900">
+                  <h3 className="text-lg font-semibold text-gray-900">
                     Don Karpov - Production Assistant
                   </h3>
                   <div className="flex flex-row flex-wrap">
-                    <div class="flex  flex-wrap justify-center">
+                    <div className="flex  flex-wrap justify-center">
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
+                        className="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         PowerDirector
                       </div>
                     </div>
-                    <div class="flex justify-center flex-wrap">
+                    <div className="flex justify-center flex-wrap">
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
+                        className="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         Adobe Premiere Pro
                       </div>
                     </div>
-                    <div class="flex flex-wrap justify-center">
+                    <div className="flex flex-wrap justify-center">
                       <div
                         data-te-chip-init
                         data-te-ripple-init
-                        class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
+                        className="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
                         data-te-close="true"
                       >
                         DropBox
