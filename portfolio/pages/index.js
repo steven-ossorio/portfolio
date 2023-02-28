@@ -347,7 +347,7 @@ export default function Home() {
                   <time className="mb-1 text-sm font-normal leading-none text-gray-500">
                     2021-2022
                   </time>
-                  <h3 className="text-lg font-semibold text-gray-900">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                     Crypto Project - Engineering Manager
                   </h3>
                   <div className="flex flex-row flex-wrap">
@@ -408,7 +408,7 @@ export default function Home() {
                   <time className="mb-1 text-sm font-normal leading-none text-gray-500">
                     2019-2020
                   </time>
-                  <h3 className="text-lg font-semibold text-gray-900">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                     Wayfair - Software Engineer
                   </h3>
                   <div className="flex flex-row flex-wrap">
@@ -489,7 +489,7 @@ export default function Home() {
                   <time className="mb-1 text-sm font-normal leading-none text-gray-500">
                     2015-2017
                   </time>
-                  <h3 className="text-lg font-semibold text-gray-900">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                     Don Karpov - Production Assistant
                   </h3>
                   <div className="flex flex-row flex-wrap">
