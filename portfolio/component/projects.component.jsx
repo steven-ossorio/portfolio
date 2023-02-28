@@ -69,13 +69,6 @@ const Project = ({
       className="mb-12 max-w-sm mb-30 border rounded-lg shadow border-gray-700"
       style={{ backgroundColor: "#1D1D1D", margin: "1%" }}
     >
-      <a href="#">
-        <img
-          className="rounded-t-lg"
-          src="/docs/images/blog/image-1.jpg"
-          alt=""
-        />
-      </a>
       <div className="p-5">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
           {title}
@@ -143,7 +136,7 @@ const Project = ({
             </svg>
           </button>
         )}
-        <h6 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <h6 className="mb-2 text-2xl font-bold tracking-tight text-white">
           Tech Stack
         </h6>
         <TagsContainer tags={tags} />
@@ -156,13 +149,13 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      class="container max-w-md md:max-w-2xl xl:max-w-4xl pl-4 pr-4 mb-4 mt-4 lg:p-0 lg:m-0"
+      className="container max-w-md md:max-w-2xl xl:max-w-4xl pl-4 pr-4 mb-4 mt-4 lg:p-0 lg:m-0"
     >
       <div>
-        <div class="text-4xl mb-4 bold lg:mt-8">Projects</div>
+        <div className="text-4xl mb-4 bold lg:mt-8">Projects</div>
         <hr className="w-48 h-1 my-4 bg-red-600 border-0 rounded dark:bg-gray-700" />
       </div>
-      <div class=" mx-auto grid grid-cols-1 md:max-w-2xl md:grid-cols-2 gap-3 xl:max-w-4xl justify-items-center mt-5">
+      <div className=" mx-auto grid grid-cols-1 md:max-w-2xl md:grid-cols-2 gap-3 xl:max-w-4xl justify-items-center mt-5">
         {projectsData.map((data) => {
           return <Project key={data.title} {...data} />;
         })}
