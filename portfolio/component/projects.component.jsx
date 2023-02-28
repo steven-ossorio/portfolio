@@ -154,12 +154,15 @@ const Project = ({
 
 const Projects = () => {
   return (
-    <div class="container max-w-md md:max-w-2xl xl:max-w-4xl pl-4 pr-4 mb-4 mt-4 lg:p-0 lg:m-0">
+    <div
+      id="projects"
+      class="container max-w-md md:max-w-2xl xl:max-w-4xl pl-4 pr-4 mb-4 mt-4 lg:p-0 lg:m-0"
+    >
       <div>
         <div class="text-4xl mb-4 bold lg:mt-8">Projects</div>
-        <hr class="w-48 h-1 my-4 border-0 rounded md:my-10 bg-gray-700" />
+        <hr className="w-48 h-1 my-4 bg-red-600 border-0 rounded dark:bg-gray-700" />
       </div>
-      <div class=" mx-auto grid grid-cols-1 md:max-w-2xl md:grid-cols-2 gap-3 xl:gap-y-6 xl:gap-x-32 xl:grid-cols-3 xl:max-w-4xl justify-items-center mt-5">
+      <div class=" mx-auto grid grid-cols-1 md:max-w-2xl md:grid-cols-2 gap-3 xl:max-w-4xl justify-items-center mt-5">
         {projectsData.map((data) => {
           return <Project key={data.title} {...data} />;
         })}

@@ -10,18 +10,14 @@ const AboutMe = () => {
   return (
     <div>
       <div className="container max-w-md md:max-w-2xl xl:max-w-4xl flex flex-col justify-between mx-auto">
-        <div className="pt-12 md:py-12 sm:px-5 md:px-10 lg:px-14">
-          <div className="text-5xl p-5 text-black bold">About Me</div>
-          <hr className="hidden md:block w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
-        </div>
-        <div className="flex items-center justify-center drop-shadow-xl">
+        <div className="flex items-center justify-center drop-shadow-xl pt-12">
           <img
             className="w-[240px] h-[240px] drop-shadow-xl mx-auto rounded-[20px]"
             src="steven-f1.png"
             alt="placeholder image"
           />
         </div>
-        <h2 className="mt-6 self-center text-[26px] font-semibold mb-1 text-black">
+        <h2 className="mt-6 self-center text-[26px] font-semibold mb-1 text-black dark:bg-[#1D1D1D] dark:text-[#A6A6A6]">
           Steven Ossorio
         </h2>
         <h3 className="mb-4 self-center text-[#7B7B7B] inline-block dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg dark:text-[#A6A6A6]">

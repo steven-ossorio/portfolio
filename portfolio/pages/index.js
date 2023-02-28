@@ -23,7 +23,7 @@ export default function Home() {
         <Projects />
         <Footer />
       </div>
-      <div className="container grid grid-cols-12 md:gap-10 justify-between lg:mt-[220px] lg:my-0 lg:mx-auto">
+      <div className="hidden container lg:grid grid-cols-12 md:gap-10 justify-between lg:mt-[220px] lg:my-0 lg:mx-auto">
         <div className="col-span-12 lg:col-span-4 hidden lg:block h-screen sticky top-44">
           <div className="container max-w-md md:max-w-2xl xl:max-w-4xl flex flex-col justify-between mx-auto">
             <div className="flex items-center justify-center drop-shadow-xl">
@@ -33,10 +33,10 @@ export default function Home() {
                 alt="placeholder image"
               />
             </div>
-            <h3 className="mt-2 mb-2 self-center inline-block bg-[#1D1D1D] px-5 py-1.5 rounded-lg text-white">
+            <h3 className="mt-2 mb-2 text-[26px] font-semibold self-center inline-block dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg text-black dark:text-white">
               Steven Ossorio
             </h3>
-            <h3 className="mb-4 self-center inline-block bg-[#1D1D1D] px-5 py-1.5 rounded-lg text-white">
+            <h3 className="mb-4 self-center inline-block dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg text-[#7B7B7B] dark:text-white">
               Software Engineer
             </h3>
             <div className="flex justify-center space-x-3 items-center">
@@ -77,9 +77,9 @@ export default function Home() {
                 </svg>
               </a>
             </div>
-            <div className="p-7 rounded-2xl mt-7 bg-[#1D1D1D]">
-              <div className="flex border-b border-[#3D3A3A] pb-2.5">
-                <span className="flex h-10 w-10 items-center justify-center bg-black text-[#E93B81] shadow-md">
+            <div className="p-7 rounded-2xl mt-7 bg-[#F3F6F6] dark:bg-[#1D1D1D]">
+              <div className="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5">
+                <span className="flex h-10 w-10 items-center justify-center bg-white dark:bg-black text-[#E93B81] shadow-md">
                   <svg
                     fill="none"
                     className="h-4 w-4"
@@ -97,12 +97,16 @@ export default function Home() {
                   </svg>
                 </span>
                 <div className="text-left ml-2.5">
-                  <div className="text-xs text-[#A6A6A6]">Phone</div>
-                  <div className="text-xs text-[#A6A6A6]">718-581-9131</div>
+                  <div className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
+                    Phone
+                  </div>
+                  <div className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
+                    718-581-9131
+                  </div>
                 </div>
               </div>
-              <div className="flex border-b border-[#3D3A3A] py-2.5">
-                <span className="flex h-10 w-10 items-center justify-center bg-black text-[#6AB5B9] shadow-md">
+              <div className="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] py-2.5">
+                <span className="flex h-10 w-10 items-center justify-center bg-white dark:bg-black text-[#6AB5B9] shadow-md">
                   <svg
                     fill="none"
                     className="h-4 w-4"
@@ -120,14 +124,16 @@ export default function Home() {
                   </svg>
                 </span>
                 <div className="text-left ml-2.5">
-                  <div className="text-xs text-[#A6A6A6]">Email</div>
-                  <div className="text-xs text-[#A6A6A6]">
+                  <div className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
+                    Email
+                  </div>
+                  <div className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
                     usa.s.ossorio@gmail.com
                   </div>
                 </div>
               </div>
               <div className="flex py-2.5">
-                <span className="flex h-10 w-10 items-center justify-center bg-black text-[#C17CEB] shadow-md">
+                <span className="flex h-10 w-10 items-center justify-center bg-white dark:bg-black text-[#C17CEB] shadow-md">
                   <svg
                     fill="none"
                     className="h-4 w-4"
@@ -150,8 +156,12 @@ export default function Home() {
                   </svg>
                 </span>
                 <div className="text-left ml-2.5">
-                  <div className="text-xs text-[#A6A6A6]">Location</div>
-                  <div className="text-xs text-[#A6A6A6]">Houston, TX, USA</div>
+                  <div className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
+                    Location
+                  </div>
+                  <div className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
+                    Houston, TX, USA
+                  </div>
                 </div>
               </div>
             </div>
