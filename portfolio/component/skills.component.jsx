@@ -1,6 +1,4 @@
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
-import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 
 import { AiFillHtml5 } from "react-icons/ai";
@@ -60,27 +58,15 @@ const skills = [
 
 const Skills = () => {
   return (
-    <Container id="skills" maxWidth="md" sx={{ marginTop: "50px" }}>
-      <Typography component="div" variant="h4">
-        Skills
-      </Typography>
-      <Divider
-        sx={{
-          color: "red",
-          width: "50%",
-          borderBottomWidth: "3px",
-          backgroundColor: "red",
-          marginBottom: "20px",
-        }}
-      />
-      <Box
-        sx={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "flex-start",
-        }}
-        mt={5}
-      >
+    <div
+      id="skills"
+      className="container flex flex-col md:max-w-2xl xl:max-w-4xl pl-4 pr-4 mb-4 mt-4 lg:p-0 lg:m-0"
+    >
+      <div>
+        <div className="text-4xl mb-4 bold lg:mt-8">Skills</div>
+        <hr className="w-48 h-1 my-4 bg-red-600 border-0 rounded dark:bg-gray-700" />
+      </div>
+      <Box className="flex flex-wrap justify-start" mt={5}>
         {skills.map(({ name, Icon }) => {
           return (
             <Box
@@ -108,7 +94,7 @@ const Skills = () => {
           );
         })}
       </Box>
-    </Container>
+    </div>
   );
 };
 
