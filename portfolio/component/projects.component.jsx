@@ -41,11 +41,11 @@ const TagsContainer = ({ tags }) => {
     <div className="flex flex-row flex-wrap">
       {tags.map((tagItem) => {
         return (
-          <div class="flex  flex-wrap justify-center" key={tagItem}>
+          <div className="flex  flex-wrap justify-center" key={tagItem}>
             <div
               data-te-chip-init
               data-te-ripple-init
-              class="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
+              className="[word-wrap: break-word] my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] py-0 px-[12px] text-[13px] font-normal normal-case leading-loose shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] bg-neutral-600 text-neutral-200"
               data-te-close="true"
             >
               {tagItem}
@@ -70,13 +70,17 @@ const Project = ({
       style={{ backgroundColor: "#1D1D1D", margin: "1%" }}
     >
       <a href="#">
-        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+        <img
+          className="rounded-t-lg"
+          src="/docs/images/blog/image-1.jpg"
+          alt=""
+        />
       </a>
-      <div class="p-5">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
+      <div className="p-5">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
           {title}
         </h5>
-        <p class="mb-3 font-normal text-neutral-200">{description}</p>
+        <p className="mb-3 font-normal text-neutral-200">{description}</p>
         {inDevelopment && (
           <div
             className="flex items-center bg-blue-500 text-white text-sm font-bold py-2 mt-6 mb-6"
@@ -150,12 +154,12 @@ const Project = ({
 
 const Projects = () => {
   return (
-    <div className="container max-w-md md:max-w-2xl xl:max-w-4xl pl-4 pr-4 mb-4 mt-4 lg:p-0 lg:m-0">
+    <div class="container max-w-md md:max-w-2xl xl:max-w-4xl pl-4 pr-4 mb-4 mt-4 lg:p-0 lg:m-0">
       <div>
-        <div className="text-4xl mb-4 bold lg:mt-8">Projects</div>
-        <hr className="w-48 h-1 my-4 border-0 rounded md:my-10 bg-gray-700" />
+        <div class="text-4xl mb-4 bold lg:mt-8">Projects</div>
+        <hr class="w-48 h-1 my-4 border-0 rounded md:my-10 bg-gray-700" />
       </div>
-      <div className=" mx-auto grid grid-cols-1 md:max-w-2xl md:grid-cols-2 gap-3 xl:gap-y-6 xl:gap-x-32 xl:grid-cols-3 xl:max-w-4xl justify-items-center mt-5">
+      <div class=" mx-auto grid grid-cols-1 md:max-w-2xl md:grid-cols-2 gap-3 xl:gap-y-6 xl:gap-x-32 xl:grid-cols-3 xl:max-w-4xl justify-items-center mt-5">
         {projectsData.map((data) => {
           return <Project key={data.title} {...data} />;
         })}
