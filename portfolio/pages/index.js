@@ -188,12 +188,15 @@ export default function Home() {
         <div className="col-span-12 lg:col-span-8">
           <div class="border-b border-gray-700">
             <ul class="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-400">
-              <li class="mr-2" onClick={() => setTopic("aboutme")}>
+              <li
+                class="mr-2 cursor-pointer"
+                onClick={() => setTopic("aboutme")}
+              >
                 <a
                   class={`${
                     topic == "aboutme"
-                      ? "border-b-2 active text-blue-500 border-blue-500"
-                      : "border-b-2 border-transparent  hover:border-gray-300 hover:text-gray-300"
+                      ? " border-b-2 active text-blue-500 border-blue-500"
+                      : "border-b-2 border-transparent  border-gray-300 hover:text-gray-300"
                   } inline-flex p-4 rounded-t-lg group`}
                 >
                   <svg
@@ -216,7 +219,7 @@ export default function Home() {
                   Profile
                 </a>
               </li>
-              <li class="mr-2" onClick={() => setTopic("work")}>
+              <li class="mr-2 cursor-pointer" onClick={() => setTopic("work")}>
                 <a
                   class={`${
                     topic == "work"
@@ -240,7 +243,10 @@ export default function Home() {
                   Work Experience
                 </a>
               </li>
-              <li class="mr-2" onClick={() => setTopic("skills")}>
+              <li
+                class="mr-2 cursor-pointer"
+                onClick={() => setTopic("skills")}
+              >
                 <a
                   class={`${
                     topic == "skills"
@@ -264,12 +270,15 @@ export default function Home() {
                   Skills
                 </a>
               </li>
-              <li class="mr-2" onClick={() => setTopic("projects")}>
+              <li
+                class="mr-2 cursor-pointer"
+                onClick={() => setTopic("projects")}
+              >
                 <a
                   class={`${
                     topic == "projects"
-                      ? "border-b-2 active text-blue-500 border-blue-500"
-                      : "border-b-2 border-transparenthover:border-gray-300 hover:text-gray-300"
+                      ? " border-b-2  active text-blue-500 border-blue-500"
+                      : "border-b-2 border-transparent hover:border-gray-300 hover:text-gray-300"
                   } inline-flex p-4 rounded-t-lg group`}
                 >
                   <svg
