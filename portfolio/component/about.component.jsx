@@ -17,7 +17,7 @@ const AboutMe = () => {
             alt="placeholder image"
           />
         </div>
-        <h2 className="mt-6 self-center text-[26px] font-semibold mb-1 text-black dark:bg-[#1D1D1D] dark:text-[#A6A6A6]">
+        <h2 className="mt-6 self-center text-[26px] font-semibold mb-1 text-black dark:bg-[#1D1D1D] dark:text-[#A6A6A6] dark:p-4 rounded-lg">
           Steven Ossorio
         </h2>
         <h3 className="mb-4 self-center text-[#7B7B7B] inline-block dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg dark:text-[#A6A6A6]">
