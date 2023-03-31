@@ -6,12 +6,15 @@ const projectsData = [
     imageUrl: "",
     imageAlt: "Jobs Project",
     tags: [
-      "ReactJS",
+      "NextJS",
+      "TypeScript",
+      "Next-Auth",
+      "OAuth",
       "Tailwind CSS",
       "GraphQL",
-      "NodeJS",
+      "Express",
       "PostgreSQL",
-      "Netlify",
+      "Vercel",
       "Github",
     ],
     links: {
