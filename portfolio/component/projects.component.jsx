@@ -23,20 +23,20 @@ const projectsData = [
     },
     inDevelopment: true,
   },
-  {
-    title: "Clothing site",
-    description:
-      "An eCommerce clothing site. The development will be continous as further improvement are done over the course of the year",
+  // {
+  //   title: "Clothing site",
+  //   description:
+  //     "An eCommerce clothing site. Updates to follow once competition of Jobs main MVP has been completed.",
 
-    imageUrl: "",
-    imageAlt: "Clothing App",
-    tags: ["ReactJS", "Redux", "Styled-Components", "Firebase", "Stripe"],
-    links: {
-      github: "https://github.com/steven-ossorio/basic_ecommerce",
-      website: "https://keen-croissant-503685.netlify.app",
-    },
-    inDevelopment: false,
-  },
+  //   imageUrl: "",
+  //   imageAlt: "Clothing App",
+  //   tags: ["ReactJS", "Redux", "Styled-Components", "Firebase", "Stripe"],
+  //   links: {
+  //     github: "https://github.com/steven-ossorio/basic_ecommerce",
+  //     website: "https://keen-croissant-503685.netlify.app",
+  //   },
+  //   inDevelopment: false,
+  // },
 ];
 
 const TagsContainer = ({ tags }) => {
