@@ -15,12 +15,11 @@ import {
   SiStyledcomponents,
   SiTailwindcss,
   SiTypescript,
-  SiVercel,
 } from "react-icons/si";
 
 const skills = [
   {
-    name: "React",
+    name: "React JS",
     Icon: DiReact,
   },
   {
