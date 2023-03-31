@@ -4,35 +4,41 @@ import Typography from "@mui/material/Typography";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3Full, DiReact } from "react-icons/di";
 import {
-  SiJavascript,
-  SiStyledcomponents,
-  SiRedux,
-  SiGraphql,
-  SiPostgresql,
   SiAmazonaws,
+  SiExpress,
   SiGithub,
+  SiGraphql,
+  SiJavascript,
+  SiNextdotjs,
+  SiPostgresql,
+  SiRedux,
+  SiStyledcomponents,
+  SiTailwindcss,
+  SiTypescript,
+  SiVercel,
 } from "react-icons/si";
 
 const skills = [
-  {
-    name: "HTML5",
-    Icon: AiFillHtml5,
-  },
-  {
-    name: "CSS3",
-    Icon: DiCss3Full,
-  },
-  {
-    name: "JavaScript",
-    Icon: SiJavascript,
-  },
   {
     name: "React",
     Icon: DiReact,
   },
   {
-    name: "Styled Component",
-    Icon: SiStyledcomponents,
+    name: "TypeScript",
+    Icon: SiTypescript,
+  },
+  {
+    name: "NextJS",
+    Icon: SiNextdotjs,
+  },
+  {
+    name: "TailWindCSS",
+    Icon: SiTailwindcss,
+  },
+
+  {
+    name: "JavaScript",
+    Icon: SiJavascript,
   },
   {
     name: "Redux",
@@ -53,6 +59,22 @@ const skills = [
   {
     name: "Git",
     Icon: SiGithub,
+  },
+  {
+    name: "Express",
+    Icon: SiExpress,
+  },
+  {
+    name: "Styled Component",
+    Icon: SiStyledcomponents,
+  },
+  {
+    name: "HTML5",
+    Icon: AiFillHtml5,
+  },
+  {
+    name: "CSS3",
+    Icon: DiCss3Full,
   },
 ];
 
