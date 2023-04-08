@@ -19,7 +19,7 @@ const projectsData = [
     ],
     links: {
       github: "https://github.com/steven-ossorio/jobs",
-      website: "https://jobs-frontend-steven-ossorio.vercel.app/",
+      // website: "https://jobs-frontend-steven-ossorio.vercel.app/",
     },
     inDevelopment: true,
   },
@@ -92,7 +92,7 @@ const Project = ({
             </svg>
             <p>
               Project is in constant development. For goals/tasks, please check
-              GitHub page.
+              GitHub page. To be launched on production by April 10th.
             </p>
           </div>
         )}
