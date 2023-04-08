@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const projectsData = [
   {
     title: "Jobs",
@@ -21,6 +23,7 @@ const projectsData = [
       github: "https://github.com/steven-ossorio/jobs",
       // website: "https://jobs-frontend-steven-ossorio.vercel.app/",
     },
+    imageUrl: "/jobs.png",
     inDevelopment: true,
   },
   // {
@@ -66,12 +69,21 @@ const Project = ({
   inDevelopment,
   tags,
   links: { github, website },
+  imageUrl,
 }) => {
   return (
     <div
       className="mb-12 max-w-sm mb-30 border rounded-lg shadow border-gray-700"
       style={{ backgroundColor: "#1D1D1D", margin: "1%" }}
     >
+      {imageUrl && (
+        <Image
+          className="max-w-sm rounded border bg-white p-1 dark:border-neutral-700 dark:bg-neutral-800"
+          src={imageUrl}
+          width={500}
+          height={500}
+        />
+      )}
       <div className="p-5">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
           {title}
