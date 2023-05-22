@@ -104,7 +104,7 @@ const Project = ({
             </svg>
             <p>
               Project is in constant development. For goals/tasks, please check
-              GitHub page. To be launched on production by April 10th.
+              GitHub page. To be launched on production by end of May.
             </p>
           </div>
         )}
