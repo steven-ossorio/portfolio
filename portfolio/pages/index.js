@@ -167,7 +167,7 @@ export default function Home() {
             </div>
             <div className="self-center mt-4 mb-4">
               <a
-                href="resume-23.pdf"
+                href="steven-ossorio.pdf"
                 target="_blank"
                 type="button"
                 className="flex items-center text-white focus:ring-4  font-medium rounded-3xl text-sm px-5 py-2.5 mr-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-blue-800"
