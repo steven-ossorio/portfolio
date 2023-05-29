@@ -2,30 +2,54 @@ import Image from "next/image";
 
 const projectsData = [
   {
-    title: "Jobs",
+    title: "Netflix",
     description:
-      "The website includes a job search functionality with filters for location, experience level, and whether the candidate has been recently laid off. I implemented a card style job/candidate viewing interface to provide a seamless and interactive experience for users. I also developed candidate profiles that include resumes, work history, education, skills, and other relevant information. Additionally, I built a dashboard for recruiters to manage job postings, track candidate applications, and communicate with candidates.",
+      "Netflix replica created with modern NextJS 13. Development continues to add more features and functionality.",
     imageUrl: "",
-    imageAlt: "Jobs Project",
+    imageAlt: "Netflix Project",
     tags: [
       "NextJS",
       "TypeScript",
       "Next-Auth",
       "OAuth",
-      "Tailwind CSS",
-      "GraphQL",
-      "Express",
-      "PostgreSQL",
+      "TailwindCSS",
+      "Prisma",
+      "MongoDB",
       "Vercel",
       "Github",
     ],
     links: {
-      github: "https://github.com/steven-ossorio/jobs",
-      // website: "https://jobs-frontend-steven-ossorio.vercel.app/",
+      github: "https://github.com/steven-ossorio/netflix-clone.git",
+      website: "https://netflix-navy-beta.vercel.app",
     },
-    imageUrl: "/jobs.png",
+    imageUrl: "/netflix-image.png",
     inDevelopment: true,
   },
+  // {
+  //   title: "Jobs",
+  //   description:
+  //     "The website includes a job search functionality with filters for location, experience level, and whether the candidate has been recently laid off. I implemented a card style job/candidate viewing interface to provide a seamless and interactive experience for users. I also developed candidate profiles that include resumes, work history, education, skills, and other relevant information. Additionally, I built a dashboard for recruiters to manage job postings, track candidate applications, and communicate with candidates.",
+  //   imageUrl: "",
+  //   imageAlt: "Jobs Project",
+  //   tags: [
+  //     "NextJS",
+  //     "TypeScript",
+  //     "Next-Auth",
+  //     "OAuth",
+  //     "Tailwind CSS",
+  //     "GraphQL",
+  //     "Express",
+  //     "PostgreSQL",
+  //     "Vercel",
+  //     "Github",
+  //   ],
+  //   links: {
+  //     github: "https://github.com/steven-ossorio/jobs",
+  //     // website: "https://jobs-frontend-steven-ossorio.vercel.app/",
+  //   },
+  //   imageUrl: "/jobs.png",
+  //   inDevelopment: true,
+  // },
   // {
   //   title: "Clothing site",
   //   description:
